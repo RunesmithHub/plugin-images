@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "runesmith.images",
+  "name": "Images",
+  "version": "0.1.0",
+  "summary": "Opens PNG, JPEG, WebP, GIF, BMP and ICO files in an image viewer with zoom.",
+  "authors": [
+    "Dylan de Beer"
+  ],
+  "license": "Apache-2.0",
+  "repository": "https://github.com/RunesmithHub/plugin-images",
+  "runesmithApi": "^0.2.0",
+  "projects": {
+    "contracts": "src/Runesmith.Images.Contracts/Runesmith.Images.Contracts.csproj",
+    "implementation": "src/Runesmith.Images/Runesmith.Images.csproj"
+  },
+  "capabilities": [
+    {
+      "id": "filesystem",
+      "reason": "Reads the image files you open, also outside the open folder."
+    }
+  ],
+  "languages": ["en"],
+  "icon": "icon.png",
+  "categories": [
+    "Visualization"
+  ],
+  "keywords": [
+    "image",
+    "png",
+    "jpg",
+    "jpeg",
+    "webp",
+    "gif",
+    "bmp",
+    "ico"
+  ]
+}

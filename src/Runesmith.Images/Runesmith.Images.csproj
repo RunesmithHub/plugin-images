@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The image viewer for Runesmith: PNG, JPEG, WebP, GIF, BMP and ICO files in an editor tab, with zoom.</Description>
+    <!-- Flags text users see that is written in the code instead of locales/en. -->
+    <RunesmithLocalize>true</RunesmithLocalize>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Runesmith.Images.Contracts\Runesmith.Images.Contracts.csproj" />
+  </ItemGroup>
+  <!-- Runesmith supplies these when it loads the plugin, so none of them is copied next to it. -->
+  <ItemGroup>
+    <PackageReference Include="Runesmith.Sdk" ExcludeAssets="runtime" />
+    <PackageReference Include="HammerUI" ExcludeAssets="runtime" />
+    <PackageReference Include="Avalonia" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Runesmith.Images.Tests" />
+  </ItemGroup>
+</Project>

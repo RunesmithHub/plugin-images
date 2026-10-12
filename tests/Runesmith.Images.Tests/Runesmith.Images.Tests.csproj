@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Headless" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Runesmith.Images\Runesmith.Images.csproj" />
+    <!-- The plugin leaves out the libraries Runesmith provides; the tests need their own copies. -->
+    <PackageReference Include="Runesmith.Sdk" />
+    <PackageReference Include="HammerUI" />
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+</Project>
